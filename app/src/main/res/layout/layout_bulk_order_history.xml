@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8_dp"
+        app:cardCornerRadius="@dimen/_10_dp"
+        app:cardElevation="@dimen/_5_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_16_dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:text="Order id: "/>
+
+                <TextView
+                    android:id="@+id/orderIdBulkTextViewOrderHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1023"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dress Segment: "/>
+
+                <TextView
+                    android:id="@+id/dressSegmentBulkTextViewOrderHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tailoring"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gender: "/>
+
+                <TextView
+                    android:id="@+id/genderBulkTextViewOrderHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dress Type: "/>
+
+                <TextView
+                    android:id="@+id/dressTypeBulkTextViewOrderHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apron"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Time: "/>
+
+                <TextView
+                    android:id="@+id/orderTimeBulkTextViewOrderHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:text="16-11-2021 07:19:23 pm"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sizes:"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="S"
+                    android:fontFeatureSettings="@string/app_name"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/sValueBulkOrderHistoryTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:fontFeatureSettings="@string/app_name"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/mValueBulkOrderHistoryTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="L"
+                    android:fontFeatureSettings="@string/app_name"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/lValueBulkOrderHistoryTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="XL"
+                    android:fontFeatureSettings="@string/app_name"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/xlValueBulkOrderHistoryTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="XXL"
+                    android:fontFeatureSettings="@string/app_name"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/xxlValueBulkOrderHistoryTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="XXXL"
+                    android:fontFeatureSettings="@string/app_name"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/xxxlValueBulkOrderHistoryTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

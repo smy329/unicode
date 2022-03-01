@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activities.DeliveryAddressActivity"
+    android:layout_margin="@dimen/activity_margin_size">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/_16_dp">
+
+            <ImageView
+                android:id="@+id/unicodeLogoImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/_16_dp"
+                android:src="@drawable/logo_mimbar"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/deliveryAddressTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:text="Delivery Address"
+                android:textSize="30sp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/deliveryAddressDescTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/_20_dp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="Enter delivery address to receive your ordered product"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/gray"/>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/flatHoldingRoadNoInputBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your Flat No./ Holding No./ Road No."
+                    android:layout_marginBottom="@dimen/_8_dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/postOfficeInputBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Post Office"
+                    android:layout_marginBottom="@dimen/_8_dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/policeStationInputBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Police Station"
+                    android:layout_marginBottom="@dimen/_8_dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/districtInputBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="District"
+                    android:layout_marginBottom="@dimen/_8_dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/signupButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Signup to Unicode"
+                    android:layout_marginTop="@dimen/_8_dp"
+                    android:layout_marginBottom="@dimen/_8_dp"
+                    style="@style/Button"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/progressBarRLDeliveryAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/progress_dialog"
+            android:elevation="@dimen/_8_dp"
+            android:gravity="center"
+            android:padding="@dimen/_20_dp"
+            android:visibility="invisible"
+            android:layout_centerInParent="true">
+
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/colorPrimary" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</ScrollView>
+
+
+

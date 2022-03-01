@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16_dp"
+    tools:context=".Activities.VerifyMobileNo">
+
+    <ImageView
+        android:id="@+id/unicodeLogoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/logo_mimbar"
+        android:transitionName="unicodeLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/verifyHeadingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="Verify Mobile No."
+        android:textSize="30sp"
+        android:transitionName="unicodeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unicodeLogoImageView" />
+
+    <TextView
+        android:id="@+id/enterVerificationCodeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Enter verification code if not automatically authenticated."
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verifyHeadingTextView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/enterVerificationCodeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/enterVerificationCodeTextView">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/otpInputBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the OTP"
+            android:layout_marginBottom="@dimen/_8_dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/verifyOtpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify OTP"
+            android:layout_marginTop="@dimen/_8_dp"
+            android:layout_marginBottom="@dimen/_8_dp"
+            style="@style/Button"/>
+        <TextView
+            android:id="@+id/smsWarningTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="You might receive an SMS message for verification and standard rates apply"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/verifyHeadingTextView" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20_dp" />
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

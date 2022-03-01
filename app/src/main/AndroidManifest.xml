@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unicode.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo_mimbar"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Unicode" >
+        <activity
+            android:name=".Activities.UniformFemaleDressType"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EditInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DeliveryAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PasswordUpdateSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.NewPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.OrderHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.OrderConfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.UniformMaleDressType"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Gender"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DressSegmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.VerifyMobileNo"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Signup"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Login"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.UnicodeTest01.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+
+</manifest>

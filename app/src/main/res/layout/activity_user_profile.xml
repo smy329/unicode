@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UserProfileActivity"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_margin_size">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="?actionBarSize"
+      android:layout_marginBottom="@dimen/_16_dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Profile"
+        android:textSize="@dimen/_20_sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_slab_bold"/>
+
+    <ImageView
+        android:id="@+id/logoutIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_logout"
+        app:tint="@color/colorPrimary" />
+  </RelativeLayout>
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:cardBackgroundColor="@color/colorPrimary"
+      android:layout_gravity="center_horizontal"
+      app:cardCornerRadius="100dp"
+      android:layout_marginBottom="@dimen/_16_dp">
+
+    <ImageView
+        android:id="@+id/imageViewOrderConfirmation"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_profile"
+        app:tint="@color/white"
+        android:padding="@dimen/_16_dp"/>
+
+  </androidx.cardview.widget.CardView>
+
+  <TextView
+      android:id="@+id/fullNameTextViewProfile"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="User Profile"
+      android:textSize="@dimen/_26_sp"
+      android:gravity="center"
+      android:fontFamily="@font/roboto_slab_bold"/>
+
+  <TextView
+      android:id="@+id/mobileNoTextViewProfile"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Mobile No"
+      android:textSize="@dimen/_20_sp"
+      android:gravity="center"
+      android:layout_marginBottom="@dimen/_8_sp"/>
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/_8_dp"
+      app:cardCornerRadius="@dimen/_15_dp"
+      app:cardElevation="@dimen/_10_dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_16_dp">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:text="Delivery Address:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/editInfoIconUserProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorPrimary" />
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <TextView
+          android:id="@+id/deliveryAddressUserProfileTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Address Here"
+          android:textColor="@color/gray"
+          android:layout_marginBottom="@dimen/_4_dp"
+          android:layout_marginTop="@dimen/_8_dp"/>
+
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <Button
+      android:id="@+id/orderHistoryButtonUserProfile"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/_8_dp"
+      style="@style/Button"
+      android:text="See Your Order History" />
+
+
+  </LinearLayout>

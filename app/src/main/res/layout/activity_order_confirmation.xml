@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.OrderConfirmationActivity"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_margin_size">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="100dp">
+
+        <ImageView
+            android:id="@+id/imageViewOrderConfirmation"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_trouser"
+            app:tint="@color/white"
+            android:padding="@dimen/_16_dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/clothTitleTextViewOrderConfirmation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pant"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:textSize="@dimen/_24_sp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_8_dp"
+        android:layout_marginBottom="@dimen/_8_dp"/>
+
+    <TextView
+        android:id="@+id/descTextViewOrderConfirmation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order will be placed according to your given data. You may select sizes, or your may go for specific precisions."
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_4_dp"
+        android:layout_marginBottom="@dimen/_8_dp"
+        android:textColor="@color/gray"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8_dp"
+        app:cardCornerRadius="@dimen/_16_dp"
+        app:cardElevation="@dimen/_10_dp"
+        android:layout_marginTop="@dimen/_4_dp"
+        android:layout_marginBottom="@dimen/_4_dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/_4_dp">
+
+            <TextView
+                android:id="@+id/precisionNameOrderConfirmationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shoulder"
+                android:fontFeatureSettings="@string/app_name"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/_16_dp"
+                />
+
+            <TextView
+                android:id="@+id/precisionValueOrderConfirmationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/_16_dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/orderConfirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Order"
+        style="@style/Button"
+        android:layout_margin="@dimen/_8_dp"
+        android:layout_marginTop="@dimen/_16_dp"/>
+
+
+</LinearLayout>

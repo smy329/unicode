@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Activities.OrderHistoryActivity"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_margin_size">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Order History"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_20_sp" />
+
+        <Spinner
+            android:id="@+id/orderHistoryTypeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/orderHistoryPrecisionsRecyclerView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/_8_dp"-->
+<!--        android:layout_marginBottom="@dimen/_8_dp">-->
+
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
+
+</LinearLayout>

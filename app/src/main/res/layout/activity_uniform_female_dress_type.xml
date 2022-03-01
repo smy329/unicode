@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_margin_size"
+    android:scrollbars="none"
+    tools:context=".Activities.UniformFemaleDressType">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Dress Type"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_20_sp" />
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shirtUniformFemaleCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_8_dp"
+                app:cardCornerRadius="@dimen/_16_dp"
+                app:cardElevation="@dimen/_10_dp"
+                android:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_16_dp">
+
+                    <ImageView
+                        android:id="@+id/shirtUniformFemaleIconImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="@dimen/_16_dp"
+                        android:src="@drawable/ic_shirt" />
+
+                    <TextView
+                        android:id="@+id/shirtUniformFemaleTitleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10_dp"
+                        android:fontFamily="@font/roboto_slab_bold"
+                        android:text="Shirt"
+                        android:textSize="@dimen/_18_sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pantUniformFemaleCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_8_dp"
+                app:cardCornerRadius="@dimen/_16_dp"
+                app:cardElevation="@dimen/_10_dp"
+                android:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_16_dp">
+
+                    <ImageView
+                        android:id="@+id/pantUniformFemaleIconImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="@dimen/_16_dp"
+                        android:src="@drawable/ic_pant" />
+
+                    <TextView
+                        android:id="@+id/pantUniformFemaleTitleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10_dp"
+                        android:fontFamily="@font/roboto_slab_bold"
+                        android:text="Pant"
+                        android:textSize="@dimen/_18_sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tshirtUniformFemaleCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_8_dp"
+                app:cardCornerRadius="@dimen/_16_dp"
+                app:cardElevation="@dimen/_10_dp"
+                android:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_16_dp">
+
+                    <ImageView
+                        android:id="@+id/tshirtUniformFemaleIconImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="@dimen/_16_dp"
+                        android:src="@drawable/ic_t_shirt" />
+
+                    <TextView
+                        android:id="@+id/tshirtUniformFemaleTitleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10_dp"
+                        android:fontFamily="@font/roboto_slab_bold"
+                        android:text="T-Shirt"
+                        android:textSize="@dimen/_18_sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/trouserUniformFemaleCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_8_dp"
+                app:cardCornerRadius="@dimen/_16_dp"
+                app:cardElevation="@dimen/_10_dp"
+                android:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_16_dp">
+
+                    <ImageView
+                        android:id="@+id/trouserUniformFemaleImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="@dimen/_16_dp"
+                        android:src="@drawable/ic_trouser" />
+
+                    <TextView
+                        android:id="@+id/trouserUniformFemaleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10_dp"
+                        android:fontFamily="@font/roboto_slab_bold"
+                        android:text="Trouser"
+                        android:textSize="@dimen/_18_sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/blazerUniformFemaleCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_8_dp"
+                app:cardCornerRadius="@dimen/_16_dp"
+                app:cardElevation="@dimen/_4_dp"
+                android:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_16_dp">
+
+                    <ImageView
+                        android:id="@+id/blazerUniformFemaleImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="@dimen/_16_dp"
+                        android:src="@drawable/ic_blazer" />
+
+                    <TextView
+                        android:id="@+id/blazerUniformFemaleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10_dp"
+                        android:fontFamily="@font/roboto_slab_bold"
+                        android:text="Blazer"
+                        android:textSize="@dimen/_18_sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/apronUniformFemaleCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_8_dp"
+                app:cardCornerRadius="@dimen/_16_dp"
+                app:cardElevation="@dimen/_4_dp"
+                android:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_16_dp">
+
+                    <ImageView
+                        android:id="@+id/apronUniformFemaleImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="@dimen/_16_dp"
+                        android:src="@drawable/ic_apron" />
+
+                    <TextView
+                        android:id="@+id/apronUniformFemaleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10_dp"
+                        android:fontFamily="@font/roboto_slab_bold"
+                        android:text="Apron"
+                        android:textSize="@dimen/_18_sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/skirtUniformFemaleCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_8_dp"
+                app:cardCornerRadius="@dimen/_16_dp"
+                app:cardElevation="@dimen/_4_dp"
+                android:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_16_dp">
+
+                    <ImageView
+                        android:id="@+id/skirtUniformFemaleImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="@dimen/_16_dp"
+                        android:src="@drawable/ic_skirt" />
+
+                    <TextView
+                        android:id="@+id/skirtUniformFemaleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10_dp"
+                        android:fontFamily="@font/roboto_slab_bold"
+                        android:text="Skirt"
+                        android:textSize="@dimen/_18_sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tunicUniformFemaleCardView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_8_dp"
+                app:cardCornerRadius="@dimen/_16_dp"
+                app:cardElevation="@dimen/_4_dp"
+                android:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_16_dp">
+
+                    <ImageView
+                        android:id="@+id/tunicUniformFemaleImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="@dimen/_16_dp"
+                        android:src="@drawable/ic_tunic" />
+
+                    <TextView
+                        android:id="@+id/tunicUniformFemaleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10_dp"
+                        android:fontFamily="@font/roboto_slab_bold"
+                        android:text="Tunic"
+                        android:textSize="@dimen/_18_sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
